@@ -1,0 +1,26 @@
+Acme Enterprise Employee Handbook — Excerpt
+
+1. Remote Work Policy
+Employees may work remotely up to three days per week with manager approval.
+Core collaboration hours are 10:00–15:00 local time. Laptops must use company VPN
+when accessing internal systems.
+
+2. Refund Policy for Enterprise Customers
+Enterprise software subscriptions may be refunded within 30 days of the initial
+purchase if less than 20% of licensed seats have been activated. After 30 days,
+refunds require written approval from Finance. Professional services fees are
+non-refundable once delivery has started.
+
+3. Expense Reimbursement
+Travel expenses above $75 require itemized receipts. Meals are capped at $60 per
+person per day for domestic travel. Submit expenses in the portal within 14 days
+of the trip end date.
+
+4. Paid Time Off
+Full-time employees accrue 20 days of PTO per calendar year. Unused PTO may roll
+over up to 5 days into the next year. Parental leave is 12 weeks for primary
+caregivers.
+
+5. Information Security
+Do not share passwords. Report suspected phishing within 1 hour to security@acme.example.
+Customer data must not be stored on personal devices.

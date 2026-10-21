@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enterprise Doc QA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Capstone · Generative AI + Agentic RAG</p>
+          <h1>Enterprise Doc QA</h1>
+          <p class="subtitle">
+            Upload enterprise documents, retrieve with vectors, and answer with
+            switchable Groq or Gemini agents.
+          </p>
+        </div>
+        <div class="provider-box">
+          <label for="provider">LLM Provider</label>
+          <select id="provider">
+            <option value="groq">Groq</option>
+            <option value="gemini">Gemini</option>
+          </select>
+          <p id="keyStatus" class="key-status">Checking API keys…</p>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel">
+          <h2>1. Documents</h2>
+          <p class="hint">Supported: PDF, TXT, CSV, Excel (.xlsx / .xls)</p>
+          <button id="uploadBtn" type="button">Upload document</button>
+          <div id="uploadStatus" class="status" hidden></div>
+          <pre id="uploadPreview" class="preview" hidden></pre>
+        </section>
+
+        <section class="panel">
+          <h2>2. Ask a question</h2>
+          <label for="question" class="sr-only">Question</label>
+          <textarea
+            id="question"
+            rows="5"
+            placeholder="e.g. What is the refund policy for enterprise customers?"
+          ></textarea>
+          <div class="actions">
+            <button id="askBtn" type="button" class="primary">Ask</button>
+            <button id="clearBtn" type="button" class="ghost">Clear</button>
+          </div>
+          <div id="askStatus" class="status" hidden></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <h2>3. Answer</h2>
+          <article id="answer" class="answer">
+            Upload a document and ask a question to see a grounded response.
+          </article>
+
+          <h3>Sources</h3>
+          <div id="sources" class="sources empty">No sources yet.</div>
+
+          <h3>Agent steps</h3>
+          <ol id="steps" class="steps empty">
+            <li>Pipeline idle</li>
+          </ol>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
